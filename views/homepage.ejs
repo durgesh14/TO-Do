@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= title %>
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <img src="/images/task_icon.png" alt="icon">
+            <h1 class="todo-title">To-Do</h1>
+        </div>
+        
+        <form action="/create_task" , method="POST">
+            <div class="desc">
+                <label> Description</label>
+                <input type="text" , name="description" , placeholder="Enter description">
+            </div>
+
+            <div class="parent-cat">
+                <div class="category">
+                    <label> Category</label>
+                    <label for="select-choice1" class="label select-1"><span class="selection-choice">Choose a
+                            Category</span> </label>
+                    <select id="select-choice1" class="custom-select select " name="Category">
+                        <!-- category options -->
+    
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+    
+                <div class="due-date">
+                    <label for="birthday">Due Date:</label>
+                    <input type="date" id="due-date-id" name="due_date">
+    
+                </div>
+            </div>
+            <div class="parent-btn">
+                <div>
+                    <button class = "add-btn" type="submit" name="add">Add Task</button>
+                </div>
+                <div>
+                    <button class="delete-btn" type="submit" name="delete" formaction="/delete_task">Delete Task</button>
+                </div>
+            </div>
+            
+
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

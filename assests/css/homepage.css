@@ -1,0 +1,204 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+
+    font-family: "Comic Sans MS", Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.wrapper {
+    max-width: 500px;
+    padding: 28px 10px 30px 10px;
+    margin: 140px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+input {
+    display: inline-block;
+
+    width: 100%;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    font-size: medium;
+    padding-top: 1%;
+    margin-bottom: 2%;
+}
+
+input:focus {
+
+    border-bottom-color: #4AB1FF;
+}
+ 
+label {
+    display: block;
+    font-size: small;
+}
+
+/* Dropdown */
+
+
+
+.custom-select{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    width: 50%;
+   
+}
+.label {
+    position:  relative;
+    padding: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+  }
+  .label::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    border-left: 1px solid;
+  }
+  .open .label::after {
+     content: "▲";
+  }
+
+  .select-1 {
+    background: #4AB1FF;
+   border-bottom: .25em solid darken(#4AB1FF, 10);
+   
+ }
+ .select-1:after {
+    border-color: darken(#4AB1FF, 10);
+ }
+
+ .select {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 1em;
+    height: 4em;
+    opacity: 0;
+    
+    background: none transparent;
+    border: 0 none;
+  }
+
+  .category{
+    cursor: pointer;
+    position : relative;
+    width: 50%;
+    
+  }
+
+  .due-date{
+    width: 40%;
+    padding-left: 1%;
+    
+  }
+
+  .parent-cat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .parent-btn{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 8%;
+  }
+
+  .delete-btn{
+
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.delete-btn:active {
+  opacity: .5;
+}
+  
+
+.add-btn {
+  align-items: center;
+ 
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.add-btn:hover,
+.add-btn:active {
+    background-color: initial;
+    background-position: 0 0;
+    background-color: #1C84FF;
+  }
