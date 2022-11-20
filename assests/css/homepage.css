@@ -202,3 +202,55 @@ label {
     background-position: 0 0;
     background-color: #1C84FF;
   }
+
+  /* After Rendering task */
+  .task-list{
+    display: flex;
+    justify-content: left;
+    flex-direction: column-reverse;
+  }
+
+  .task-item{
+   
+    /* border: 1px solid #FF4742; */
+    background-color: aliceblue;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1%;
+  }
+
+  /* Custom Checkbox for task items */
+
+  /* Customize the label (the container) */
+.container {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 35px; */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+/* Updating default checkbox */
+input[type=checkbox] {
+  
+  cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+.checkbox{
+  display: flex;
+  align-items: baseline;
+}
+
+input[type=checkbox]:checked + label.task-item {
+  color: #FF4742;
+  text-decoration: line-through;
+}

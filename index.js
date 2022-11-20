@@ -22,12 +22,7 @@ app.use(express.urlencoded());
 app.use(express.static('assests'));
 
 
-app.post('/create_task', function(req, res){
 
-    console.log("request body: ", req.body.description);
-  //  taskList.push(req.body)
-  res.redirect('back');
-});
 
 app.listen(port, function(err){
     if(err){
