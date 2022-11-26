@@ -1,146 +1,123 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title><%= title %></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/homepage.css" />
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>
+    <%= title %>
+  </title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/css/homepage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <body>
-    <div class="wrapper">
+<body>
+  <div class="wrapper">
 
-        <!-- Adding Waves on webpage -->
-      <div class="custom-shape-divider-bottom-1669467156">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-            opacity=".25"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-            opacity=".5"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            class="shape-fill"
-          ></path>
-        </svg>
+    <!-- Adding Waves on webpage -->
+    <div class="custom-shape-divider-bottom-1669467156">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <!-- Form Heading -->
+    <div class="heading">
+      <img src="/images/task_icon.png" alt="icon" />
+      <h1 class="todo-title">To-Do</h1>
+    </div>
+    <!-- Creating for with submit action as /create_task -->
+    <form action="/create_task" , method="POST">
+      <!-- Creating Div for description field -->
+      <div class="desc">
+        <label> Description</label>
+        <input type="text" , name="description" , placeholder="Enter description" required />
+      </div>
+      <!-- Creating div for Category dropdown and Date input -->
+      <div class="parent-cat">
+        <div class="category">
+          <label> Category</label>
+          <label for="select-choice1" class="label select-1"><span class="selection-choice">Choose a Category</span>
+          </label>
+          <select id="select-choice1" class="custom-select select" name="Category">
+            <!-- category options -->
+            <option disabled selected value>-- Select from below --</option>
+
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="due-date">
+          <label for="due_date">Due Date:</label>
+          <input type="date" id="due-date-id" name="due_date" />
+        </div>
       </div>
 
-      <!-- Form Heading -->
-      <div class="heading">
-        <img src="/images/task_icon.png" alt="icon" />
-        <h1 class="todo-title">To-Do</h1>
+      <!-- Creating div for Add and Delete task button -->
+      <div class="parent-btn">
+        <div>
+          <button class="add-btn" type="submit" name="add">Add Task</button>
+        </div>
+        <div>
+          <!-- On clicking of delete button, It will call deletefiles function from Script.js -->
+          <button class="delete-btn" type="button" name="delete" onclick="deletefiles()">
+            Delete Task
+          </button>
+        </div>
       </div>
-      <!-- Creating for with submit action as /create_task -->
-      <form action="/create_task" , method="POST">
-        <!-- Creating Div for description field -->
-        <div class="desc">
-          <label> Description</label>
-          <input
-            type="text"
-            ,
-            name="description"
-            ,
-            placeholder="Enter description"
-            required
-          />
-        </div>
-        <!-- Creating div for Category dropdown and Date input -->
-        <div class="parent-cat">
-          <div class="category">
-            <label> Category</label>
-            <label for="select-choice1" class="label select-1"
-              ><span class="selection-choice">Choose a Category</span>
-            </label>
-            <select
-              id="select-choice1"
-              class="custom-select select"
-              name="Category"
-            >
-              <!-- category options -->
-              <option disabled selected value>-- Select from below --</option>
+    </form>
 
-              <option value="Personal">Personal</option>
-              <option value="Work">Work</option>
-              <option value="School">School</option>
-              <option value="Cleaning">Cleaning</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <div class="due-date">
-            <label for="due_date">Due Date:</label>
-            <input type="date" id="due-date-id" name="due_date" />
-          </div>
-        </div>
-
-        <!-- Creating div for Add and Delete task button -->
-        <div class="parent-btn">
-          <div>
-            <button class="add-btn" type="submit" name="add">Add Task</button>
-          </div>
-          <div>
-            <!-- On clicking of delete button, It will call deletefiles function from Script.js -->
-            <button
-              class="delete-btn"
-              type="button"
-              name="delete"
-              onclick="deletefiles()"
-            >
-              Delete Task
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <!-- Creating div to display task(fetched from mongo db) -->
-      <div class="task-list">
-        <!-- Starting a loop on tasklist(list of all todo task) -->
-        <!-- Getting tasklist variable from home_controller.js-->
-        <% for (let i=0; i < taskList.length; i++) { %>
+    <!-- Creating div to display task(fetched from mongo db) -->
+    <div class="task-list">
+      <!-- Starting a loop on tasklist(list of all todo task) -->
+      <!-- Getting tasklist variable from home_controller.js-->
+      <% for (let i=0; i < taskList.length; i++) { %>
         <div class="checkbox">
-            <!-- When Checkbox is checked, calling a function addItemsforDelete with parameter as node id -->
-          <input
-            type="checkbox"
-            class="strike"
-            onclick="addItemsforDelete('<%= taskList[i].id %>')"
-          />
+          <!-- When Checkbox is checked, calling a function addItemsforDelete with parameter as node id -->
+          <input type="checkbox" class="strike" onclick="addItemsforDelete('<%= taskList[i].id %>')" />
 
           <!-- Fetching todo description -->
           <label class="container task-item">
-            <span class = "task-desc"> <%= taskList[i].description %> </span>
-            
+            <span class="task-desc">
+              <%= taskList[i].description %>
+            </span>
+
             <!-- fetching todo category -->
-            <span class="task-category"> <%= taskList[i].Category %> </span>
+            <span class="task-category">
+              <%= taskList[i].Category %>
+            </span>
             <!-- fetching todo category -->
 
             <div class="task-due-date">
-                
-                <i class="fas fa-calendar-days"></i>
-                <%= taskList[i].due_date %>
+
+              <i class="fas fa-calendar-days"></i>
+              <%= taskList[i].due_date %>
             </div>
           </label>
         </div>
         <%} %>
-      </div>
     </div>
-    <!-- Adding script.js -->
-    <script src="/js/script.js"></script>
-  </body>
+  </div>
+  <!-- Adding script.js -->
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
