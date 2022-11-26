@@ -1,155 +1,175 @@
 /* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* removing margins and adding fonts*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
 
-    font-family: "Comic Sans MS", Times, serif;
+  font-family: "Comic Sans MS", Times, serif;
 }
 
+/* Adding waves css on the web page */
+.custom-shape-divider-bottom-1669467156 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
 
+.custom-shape-divider-bottom-1669467156 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 299px;
+}
+
+.custom-shape-divider-bottom-1669467156 .shape-fill {
+  fill: #2d5cfe;
+}
 
 body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
-    
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
 }
 
-.heading{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 .wrapper {
-    max-width: 500px;
-    padding: 28px 10px 30px 10px;
-    margin: 140px auto;
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  padding: 28px 10px 30px 10px;
+  margin: 140px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-
-
+/* Adding css for input field */
 input {
-    display: inline-block;
+  display: inline-block;
 
-    width: 100%;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: grey;
-    font-size: medium;
-   
-    margin-bottom: 2%;
+  width: 100%;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: grey;
+  font-size: medium;
+
+  margin-bottom: 2%;
 }
 
+/* Adding css for input field on focus */
 input:focus {
-
-    border-bottom-color: #4AB1FF;
+  border-bottom-color: #4ab1ff;
 }
- 
+
+/* Adding css for labels */
+
 label {
-    display: block;
-    font-size: small;
-    padding-bottom: 5px;
+  display: block;
+  font-size: small;
+  padding-bottom: 5px;
 }
 
 /* Dropdown */
 
-
-
-.custom-select{
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: grey;
-    width: 50%;
-   
+.custom-select {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: grey;
+  width: 50%;
 }
+
+/* Adding css for "Choose a Category label */
+.parent-cat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
 .label {
-    position:  relative;
-    padding: 1em;
-    border-radius: .5em;
-    cursor: pointer;
-  }
-  .label::after {
-    content: "▼";
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1em;
-    border-left: 1px solid;
-  }
-  .open .label::after {
-     content: "▲";
-  }
+  position: relative;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
 
-  .select-1 {
-    background: #4AB1FF;
-   border-bottom: .25em solid darken(#4AB1FF, 10);
-   
- }
- .select-1:after {
-    border-color: darken(#4AB1FF, 10);
- }
+.label::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1em;
+  border-left: 1px solid;
+}
 
- .select {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    padding: 1em;
-    height: 4em;
-    opacity: 0;
-    
-    background: none transparent;
-    border: 0 none;
-  }
+.open .label::after {
+  content: "▲";
+}
 
-  .category{
-    cursor: pointer;
-    position : relative;
-    width: 50%;
-    
-  }
+.select-1 {
+  background: #4ab1ff;
+  border-bottom: 0.25em solid darken(#4ab1ff, 10);
+}
 
-  .due-date{
-    width: 40%;
-    padding-left: 1%;
-    
-  }
+.select-1:after {
+  border-color: darken(#4ab1ff, 10);
+}
 
-  .parent-cat{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-  }
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1em;
+  height: 4em;
+  opacity: 0;
 
-  .parent-btn{
-    display: flex;
-    justify-content: space-around;
+  background: none transparent;
+  border: 0 none;
+}
 
-    margin-top: 8%;
-  }
+.category {
+  cursor: pointer;
+  position: relative;
+  width: 50%;
+}
 
-  .delete-btn{
+.due-date {
+  width: 40%;
+  padding-left: 1%;
+}
 
-  background: #FF4742;
-  border: 1px solid #FF4742;
+/* Adding css for ADD and DELETE TASK button*/
+
+.parent-btn {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 8%;
+}
+
+.delete-btn {
+  background: #ff4742;
+  border: 1px solid #ff4742;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
   font-size: 100%;
   font-weight: 800;
   line-height: 16px;
@@ -169,18 +189,17 @@ label {
 .delete-btn:active {
   background-color: initial;
   background-position: 0 0;
-  color: #FF4742;
+  color: #ff4742;
 }
 
 .delete-btn:active {
-  opacity: .5;
+  opacity: 0.5;
 }
-  
 
 .add-btn {
   align-items: center;
- 
-  background-color: #0276FF;
+
+  background-color: #0276ff;
   border-radius: 8px;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
@@ -190,54 +209,56 @@ label {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: "RM Neue",sans-serif;
+  font-family: "RM Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   padding: 10px 21px;
   text-align: center;
   text-transform: none;
-  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .add-btn:hover,
 .add-btn:active {
-    background-color: initial;
-    background-position: 0 0;
-    background-color: #1C84FF;
-  }
-
-  /* After Rendering task */
-  .task-list{
-   
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none; 
-    overflow-y:scroll; 
-    
-    
-    height:250px;
-    margin-top: 2%;
-  }
-  .task-list::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+  background-color: initial;
+  background-position: 0 0;
+  background-color: #1c84ff;
 }
 
-  .task-item{
-   
-    /* border: 1px solid #FF4742; */
-    background-color: aliceblue;
-    padding: 8px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 1%;
-    
-  }
+/* Adding CSS for task lists */
+/* After Rendering task */
+.task-list {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  overflow-y: scroll;
 
-  /* Custom Checkbox for task items */
+  height: 250px;
+  margin-top: 2%;
+}
 
-  /* Customize the label (the container) */
+.task-list::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.task-item {
+  /* border: 1px solid #FF4742; */
+  background-color: aliceblue;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1%;
+}
+
+/* Custom Checkbox for task items */
+
+/* Customize the label (the container) */
 .container {
   display: inline-block;
   position: relative;
@@ -253,19 +274,35 @@ label {
 }
 
 /* Updating default checkbox */
-input[type=checkbox] {
-  
+input[type="checkbox"] {
   cursor: pointer;
-    height: 20px;
-    width: 20px;
-    display: inline-block;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
 }
-.checkbox{
+
+.checkbox {
   display: flex;
   align-items: baseline;
 }
 
-input[type=checkbox]:checked + label.task-item {
-  color: #FF4742;
+input[type="checkbox"]:checked + label.task-item > :first-child{
+  color: #ff4742;
   text-decoration: line-through;
+}
+
+
+/* Adding css for labels on task-list-items like school, cleaning, etc */
+.task-category{
+  display: inline-flex;
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+  background-color: #0276ff;
+  font-variant-caps: all-small-caps;
+}
+
+.task-due-date{
+  font-size: small;
 }
