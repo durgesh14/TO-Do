@@ -10,27 +10,25 @@
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/homepage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/css/homepage.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
 </head>
 
 <body>
     <div class="wrapper">
+       
         <div class="heading">
             <img src="/images/task_icon.png" alt="icon">
             <h1 class="todo-title">To-Do</h1>
         </div>
-        
+
         <form action="/create_task" , method="POST">
             <div class="desc">
                 <label> Description</label>
-                <input type="text" , name="description" , placeholder="Enter description">
+                <input type="text" , name="description" , placeholder="Enter description" required>
             </div>
 
             <div class="parent-cat">
@@ -40,7 +38,8 @@
                             Category</span> </label>
                     <select id="select-choice1" class="custom-select select " name="Category">
                         <!-- category options -->
-    
+                        <option disabled selected value> -- Select from below -- </option>
+
                         <option value="Personal">Personal</option>
                         <option value="Work">Work</option>
                         <option value="School">School</option>
@@ -48,46 +47,47 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-    
+
                 <div class="due-date">
-                    <label for="birthday">Due Date:</label>
+                    <label for="due_date">Due Date:</label>
                     <input type="date" id="due-date-id" name="due_date">
-    
+
                 </div>
             </div>
             <div class="parent-btn">
                 <div>
-                    <button class = "add-btn" type="submit" name="add">Add Task</button>
+                    <button class="add-btn" type="submit" name="add">Add Task</button>
                 </div>
                 <div>
-                    <button class="delete-btn" type="submit" name="delete" formaction="/delete_task">Delete Task</button>
+                    <button class="delete-btn" type="button" name="delete" onclick="deletefiles()">Delete Task</button>
                 </div>
-            </div>
-            
 
+            </div>
         </form>
 
-        
+
         <div class="task-list">
+            <% for (let i=0; i < taskList.length; i++) { %>
+                <div class="checkbox">
+                    <input type="checkbox" class="strike" onclick="addItemsforDelete('<%= taskList[i].id %>')" />
+                    <label class="container task-item">
+                        <%= taskList[i].description %> 
 
-            <% for (let i of taskList) { %>
-           
-                   
-            <!-- <label class="container task-item"><%= i.description %>
-                <input type="checkbox" class="strikethrough"> 
-                <span class="checkmark"></span>
-              </label> -->
+                        <span class="task-category">
+                          <%= taskList[i].Category %>   
+                        </span>
+                        <div class="task-due-date">
+                            <%= taskList[i].due_date %>   
+                        </div>
+                        
+                    </label>
 
-              <div class="checkbox">
-                <input type="checkbox" class="strike">
-                <label class="container task-item"><%= i.description %></label>
-              </div>
-
-            <%} %>
+                </div>
+                <%} %>
         </div>
     </div>
-    <script src="/js/script.js"></script>
 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,9 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+/* removing margins and adding fonts*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +12,8 @@
 
     font-family: "Comic Sans MS", Times, serif;
 }
+
+
 
 body {
     width: 100%;
@@ -43,7 +48,7 @@ input {
     border-width: 0 0 2px;
     border-color: grey;
     font-size: medium;
-    padding-top: 1%;
+   
     margin-bottom: 2%;
 }
 
@@ -55,6 +60,7 @@ input:focus {
 label {
     display: block;
     font-size: small;
+    padding-bottom: 5px;
 }
 
 /* Dropdown */
@@ -205,10 +211,18 @@ label {
 
   /* After Rendering task */
   .task-list{
-    display: flex;
-    justify-content: left;
-    flex-direction: column-reverse;
+   
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    overflow-y:scroll; 
+    
+    
+    height:250px;
+    margin-top: 2%;
   }
+  .task-list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
   .task-item{
    
@@ -218,6 +232,7 @@ label {
     font-size: 20px;
     font-weight: bold;
     margin: 1%;
+    
   }
 
   /* Custom Checkbox for task items */
