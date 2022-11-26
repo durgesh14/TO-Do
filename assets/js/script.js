@@ -22,6 +22,26 @@ $("select").on("change", function () {
 });
 
 
+window.onload = function refresh() {
+
+  let list = document.querySelectorAll(".task-category")
+
+  for (let item of list) {
+    if (item.innerHTML.toLowerCase().trim() == "work")
+      item.style.backgroundColor = "red"
+    else if (item.innerHTML.toLowerCase().trim() == "personal")
+      item.style.backgroundColor = "wheat"
+    else if (item.innerHTML.toLowerCase().trim() == "school")
+      item.style.backgroundColor = "blue"
+    else if (item.innerHTML.toLowerCase().trim() == "cleaning")
+      item.style.backgroundColor = "green"
+    else
+      item.style.backgroundColor = "yellow"
+
+  }
+  console.log(list)
+}
+
 
 // Function to add all the checked todo task in an array named itemsToBeDeleted
 itemsToBeDeleted = [];
