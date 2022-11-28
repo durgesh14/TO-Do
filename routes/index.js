@@ -44,47 +44,10 @@ router.get(
 );
 
 /* route for creating a task */
-router.post("/create_task", function (req, res) {
-  /* creating in the database */
-  Todo.create(
-    {
-      description: req.body.description,
-      Category: req.body.Category,
-      due_date: req.body.due_date,
-    },
-    function (err, newTodo) {
-      /* if there is some error in creating the task */
-
-      if (err) {
-        console.log("Error in creating task", err.message);
-
-        return res.json(err.message);
-      }
-
-      /* else return to the home page "back" */
-
-      return res.redirect("back");
-    }
-  );
-});
+router.post("/create_task", homeController.createTask);
 
 
 //DELETE TASK ROUTE
-router.get("/delete-task", function (req, res) {
-  console.log("Deleting body: ", req.query);
-  //Deleting the node having id == req.query.id
-  Todo.findByIdAndDelete(req.query.id, function (err) {
-    /* on error */
-    if (err) {
-      console.log("Error in Deleting");
-      return;
-    }
-    /* if no error */
-
-    console.log("Data deleted");
-
-    return res.redirect("back");
-  });
-});
+router.get("/delete-task", homeController.deleteTask );
 
 module.exports = router;
