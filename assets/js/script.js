@@ -28,18 +28,25 @@ window.onload = function refresh() {
 
   for (let item of list) {
     if (item.innerHTML.toLowerCase().trim() == "work")
-      item.style.backgroundColor = "red"
+      item.style.backgroundColor = "#FED049"
     else if (item.innerHTML.toLowerCase().trim() == "personal")
-      item.style.backgroundColor = "wheat"
+      item.style.backgroundColor = "#CFFDE1"
     else if (item.innerHTML.toLowerCase().trim() == "school")
-      item.style.backgroundColor = "blue"
+      item.style.backgroundColor = "#F3EFE0"
     else if (item.innerHTML.toLowerCase().trim() == "cleaning")
-      item.style.backgroundColor = "green"
+      item.style.backgroundColor = "#A5F1E9"
     else
-      item.style.backgroundColor = "yellow"
+      item.style.backgroundColor = "aliceblue"
 
   }
   console.log(list)
+  let dueDate = document.querySelectorAll(".task-due-date i")
+  for(let item of dueDate){
+    if(item.innerHTML.length == 0){
+      item.classList.remove('fas','fa-calendar-days');
+    }
+  }
+  
 }
 
 
