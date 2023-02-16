@@ -48,6 +48,6 @@ router.post("/create_task", homeController.createTask);
 
 
 //DELETE TASK ROUTE
-router.get("/delete-task", homeController.deleteTask );
+router.get("/delete-task", homeController.deleteTask);
 
 module.exports = router;

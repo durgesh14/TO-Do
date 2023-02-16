@@ -6,7 +6,7 @@ const Todo = require("../models/todo");
 module.exports.home = function(req, res, next){
 
 
- // Sending title and tashList value to ejs file.
+ // Sending title and taskList value to ejs file.
   res.render('homepage',{
     title: 'To-Do',
     taskList: res.locals.todo

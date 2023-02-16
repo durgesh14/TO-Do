@@ -27,16 +27,16 @@ window.onload = function refresh() {
   let list = document.querySelectorAll(".task-category")
 
   for (let item of list) {
-    if (item.innerHTML.toLowerCase().trim() == "work")
-      item.style.backgroundColor = "#FED049"
+    if (item.innerHTML.toLowerCase().trim() == "wheat")
+      item.style.backgroundColor = "azure"
     else if (item.innerHTML.toLowerCase().trim() == "personal")
-      item.style.backgroundColor = "#CFFDE1"
+      item.style.backgroundColor = "coral"
     else if (item.innerHTML.toLowerCase().trim() == "school")
-      item.style.backgroundColor = "#F3EFE0"
+      item.style.backgroundColor = "cyan"
     else if (item.innerHTML.toLowerCase().trim() == "cleaning")
-      item.style.backgroundColor = "#A5F1E9"
+      item.style.backgroundColor = "deepskyblue"
     else
-      item.style.backgroundColor = "aliceblue"
+      item.style.backgroundColor = "gainsboro"
 
   }
   console.log(list)
